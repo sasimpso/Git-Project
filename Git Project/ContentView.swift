@@ -16,12 +16,12 @@ struct ContentView: View {
         NavigationView{
             Button("Show Modal") {
                 self.isPresented = true
-                
             }.sheet(isPresented: $isPresented){
-                Text("This is the modal screen")
-                
+                ModalView()
             }
-        } // End Navigation View
+        }.navigationBarTitle("Xcode and Git") // End Navigation View
+        
+        
         
     } // End View
 } // End Content View
